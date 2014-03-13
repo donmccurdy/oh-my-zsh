@@ -131,7 +131,12 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue black '%~'
+  local long_path=${PWD}
+  if [[ "$long_path" == "$HOME" ]]; then
+    prompt_segment blue black "~"
+  else
+    prompt_segment blue black ${PWD##*/}
+  fi
 }
 
 # Virtualenv: current working virtualenv
@@ -161,7 +166,7 @@ build_prompt() {
   RETVAL=$?
   prompt_status
   prompt_virtualenv
-  prompt_context
+  # prompt_context
   prompt_dir
   prompt_git
   prompt_hg
