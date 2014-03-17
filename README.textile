@@ -1,3 +1,11 @@
+h1. Fork Notes
+
+The sole purpose of this fork is to track my slight alterations to the "Agnoster" theme. More specifically I've cut the prompt to a minimum, which I prefer simply because it takes up less space. This is helpful when using a split-terminal like "iTerm 2":http://www.iterm2.com or "tmux":http://tmux.sourceforge.net/. If I need to see the full path, I just type `pwd`.
+
+****
+
+h1. Original Readme
+
 !https://s3.amazonaws.com/ohmyzsh/oh-my-zsh-logo.png!
 
 oh-my-zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and few things that make you shout...
